@@ -1,31 +1,17 @@
-// funciones en Js
+const activo = true;
+/* 
+let mensaje = "";
 
-//const saludar = function (nombre) {
-//return `Hola , ${nombre}`;
-//};
+if (activo) {
+  mensaje = " Activo";
+} else {
+  mensaje = "Inactivo";
+}
 
-//funcion de flecha
+const mesaje = activo ? "Activo" : "Inactivo";
 
-const saludar2 = (nombre) => {
-  return `Hola , ${nombre}`;
-};
+const mesaje = activo ? "Activo" : null; */
 
-const saludar3 = (nombre) => `Hola , ${nombre}`;
+const mensaje = !activo && "Activo";
 
-//console.log(saludar("Goku"));
-
-console.log(saludar2("Vegueta"));
-console.log(saludar3("GOGU"));
-
-/* const getUsare = () => ({
-  uid: "sdaad",
-  username: "ERerqer",
-});
- */
-const getUsuarioActivo = (nombre) => ({
-  uid: "ABC32432",
-  username: nombre,
-});
-
-const usuarioActivo = getUsuarioActivo("Fernando");
-console.log(usuarioActivo);
+console.log(mensaje);
